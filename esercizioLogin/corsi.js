@@ -7,7 +7,7 @@ $('#creaCorso').on('click', function () {
 
     let nomeCorso = $('#nomeCorso').val();
     let durataCorso = $('#durataCorso').val();
-    let materie = $('#materie').val();
+    let corso = $('#corso').val();
     let flag = true;
 
     if (nomeCorso == '') {
@@ -20,13 +20,13 @@ $('#creaCorso').on('click', function () {
         flag = false;       
     }
 
-    if (materie == '') {
+    if (corso == '') {
         alert('Seleziona un corso!');
         flag = false;
     }
     
     if (flag == true) {
-    $('#nuovoCorso').html(`<h3>Hai creato il corso: "${nomeCorso}" della durata di ${durataCorso} ore, al termine del quale diventerai un EPICO <br> ${materie} developer </h3>`);
+    $('#nuovoCorso').html(`<h3>Hai creato il corso: "${nomeCorso}" della durata di ${durataCorso} ore, al termine del quale diventerai un EPICO <br> ${corso} developer </h3>`);
     
 }
 
